@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clinic Appointment</title>
+    <link rel="stylesheet" href="/design.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Clinic Appointment</h1>
+      <input type="text" id="search" placeholder="Search" />
+    </header>
+
+    <section id="services">
+      <h2>Services</h2>
+      <div class="service">Odontology</div>
+      <div class="service">Neurology</div>
+      <div class="service">Cardiology</div>
+    </section>
+
+    <section id="doctors">
+      <h2>Top Doctors</h2>
+      <div class="doctor">
+        <p>Dr. Hamza Tariq - Senior Surgeon</p>
+        <p>Fee: $12</p>
+      </div>
+      <div class="doctor">
+        <p>Dr. Alina Fatima - Senior Surgeon</p>
+        <p>Fee: $12</p>
+      </div>
+    </section>
+    <section id="booking-form">
+      <h2>Book an appointment</h2>
+      <form id="appointmentForm">
+        <label for="room">Room :</label>
+        <input type="text" id="room" required />
+
+        <label for="date">Date :</label>
+        <input type="date" id="date" required />
+
+        <label for="time">Time :</label>
+        <input type="time" id="time" required />
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="message"></p>
+    </section>
+
+    <section id="bookings">
+      <h2>Booking</h2>
+      <div id="booking-list"></div>
+  </section>
+  
+
+
+    <script src="javas.js"></script>
+  </body>
+</html>
